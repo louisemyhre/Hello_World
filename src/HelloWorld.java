@@ -54,6 +54,22 @@ public class HelloWorld {
 
     }
 
+    public static int min_index (int [] a){ //læreren sin metode
+        int min_value = a[0];
+        int min_index = 0;
+
+        for(int i= 1; i< a.length; i++){
+            int value = a[i];
+            int index= i;
+
+            if(value < min_value){
+                min_value=value;
+                min_index=index;
+            }
+        }
+        return min_index;
+    }
+
     public static int[] minmaks(int [] a){
         int minste_tall = a[0];
         int storste_tall = a[0];
